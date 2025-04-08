@@ -1,61 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event-hub</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <footer class="footer">
-        <div class="container">
-          <div class="footer-section logo-section">
-            <div class="logo">
-            </div>
-            <p>Midldest 2 East 42nd<br>
-              Streearketplace New York, NY 10017</p>
-            <p><strong>+123 (55) 90067990</strong></p>
-            <p>info@gmail.com</p>
-          </div>
-      
-          <div class="footer-section links">
-            <h3>Quick links</h3>
-            <ul>
-              <li>About this Event</li>
-              <li>Venue</li>
-              <li>Speakers</li>
-              <li>Agenda</li>
-              <li>Sponsors</li>
-            </ul>
-          </div>
-      
-          <div class="footer-section links">
-            <ul>
-              <li>News</li>
-              <li>Get Tickets</li>
-              <li>Benefits</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-      
-          <div class="footer-section newsletter">
-            <h3>Quick links</h3>
-            <p>Our expertise, as well as our passion for web design, sets us apart from other agencies.</p>
-            </div>
-          </div>
+    <div class="Event-hub">
+        <div class="header">
+            <img src="Assets/Stackly logo.jpg.jpg" alt="">
+            <nav>
+                <ul type="none" class="header-menu">
+                    <li><a href="">HOME</a>
+                        <div class="home-hover">
+                            <p>HOME ONE</p>
+                            <P>HOME TWO</P>
+                            <p>HOME THREE</p>
+                        </div>
+                        <svg class="dropdown-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </li>
+                    <li><a href="">EVENTS</a>
+                        <div class="home-hover">
+                            <p>EVENTS</p>
+                            <p>ABOUT EVENTS</p>
+                            <p>EVENTS VENUE</p>
+                            <p>EVENTS GALLERY</p>
+                            <P>EVENTS DETAILS</P>
+                        </div>
+                        <svg class="dropdown-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </li>
+                    <li><a href="">SPEAKERS</a>
+                        <div class="home-hover">
+                            <p>SPEAKERS</p>
+                            <p>SPEAKERS DETAILS</p>
+                        </div>
+                        <svg class="dropdown-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </li>
+                    <li><a href="">PAGES</a>
+                        <div class="home-hover">
+                            <p>BLOG</p>
+                            <p>BLOG DETAILES</p>
+                            <p>ERROR</p>
+                            <p>FQA</p>
+                            <p>PRICING</p>
+                            <p>PRODUCT</p>
+                            <P>PRODUCT DETAILS</P>
+                        </div>
+                        <svg class="dropdown-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                <div class="header-logo-contanier">
+                    <svg class="search-bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"
+                        hight="20px">
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                    <svg class="cart-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                        hight="20px">
+                        <path
+                            d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20px" hight="20px">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </div>
+            </nav>
         </div>
-      
-        <div class="footer-bottom">
-          <p>Copyright © 2025 evente.com. All rights reserved.</p>
-          <div class="social-icons">
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-whatsapp"></i>
-            <i class="fas fa-times"></i>
-          </div>
-          <button class="scroll-top">&#8593;</button>
+        <div class="home-page">
+            <div class="home-firstpage">
+                <h5>18 - 22 Nov, 2025</h5>
+                <h1>BUSINESS<br>SUMMIT 2025</h1>
+                <p>23rd Avenue, 4th Street, Chicago, Illinois, USA</p>
+                <div class="button-arrow">
+                    <button>DISCOVER MORE
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="17px" hight="17px">
+                            <path
+                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+                        </svg>
+                </div>
+                </button>
+            </div>
+            
+            <img class="home-image" src="Assets/Speakers-Photo.jpg"/>
+            
         </div>
-      </footer>
-      
+        <div class="event-page">
+            <button>ABOUT THIS EVENTS</button>
+            <h1>Welcome to Evente, The Original Business & <br> Cultural Entertainment Venue Get Ready to <br> Informative Knowledge Share Skills.</h1>
+            <img src="Assets/Event-img.jpg" width="60%" height="60%">
+        </div>
+    </div>
 </body>
+
 </html>

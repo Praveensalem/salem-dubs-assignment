@@ -1,110 +1,199 @@
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #0c0c24;
-    color: #fff;
-  }
-  
-  .footer {
-    background-color: #0c0c24;
-    padding: 40px 20px 10px;
-    color: #d0d0e0;
-  }
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-  }
-  
-  .footer-section {
-    flex: 1 1 200px;
-    min-width: 200px;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    gap: 8px;
-  }
-  
-  .logo img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .links h3 {
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .links ul {
-    list-style: none;
+*{
     padding: 0;
-  }
-  
-  .links li {
-    margin-bottom: 8px;
-    cursor: pointer;
-  }
-  
-  .newsletter p {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-  
-  .email-input {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #555;
-    padding-bottom: 5px;
+    margin: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.Event-hub{
+    height: 100%;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.Event-hub::-webkit-scrollbar{
+    display: none;
+}
+
+.header{
+    height: 14vh;
     width: 100%;
-  }
-  
-  .email-input input {
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    flex: 1;
-  }
-  
-  .email-input button {
-    background: none;
-    border: none;
-    color: #ff2fd4;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  .footer-bottom {
-    border-top: 1px solid #1e1e3f;
-    margin-top: 40px;
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    display:flex ;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
-  }
-  
-  .social-icons i {
-    margin-left: 15px;
-    font-size: 18px;
+    padding: 10px;
+    background-color: #1d0363;
+}
+
+.cart-logo, .dropdown-logo{
+    height: 20px;
+    width: 20px;
+}
+
+.header nav{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+.header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.header-menu li{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    padding: 40px 0px;
+}
+
+.header-logo-contanier{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-hover{
+    display: none;
+    position: absolute;
+    top: 90px;
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.header-menu li:hover>.home-hover{
+    display: block;
+    animation: menuani 0.3s ease-in-out;
+}
+
+.header-menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-menu li a:hover{  
+    color: #f249b4;
     cursor: pointer;
-  }
-  
-  .scroll-top {
-    background-color: #5b3dff;
-    color: #fff;
-    border: none;
+}
+
+.dropdown-logo, .header-logo-contanier{
+    fill: white;
+}
+
+.home-hover p{
+    padding: 10px 20px;
+}
+
+.home-hover p:hover{
+    color: #f249b4;
+    cursor: pointer;
+}
+
+.search-bar:hover{
+    fill: #5233ff;
+    cursor: pointer;
+}
+
+.home-image{
+    height: 50%;
+    width: 50%;
+}
+
+.home-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d0363;
+}
+
+.home-firstpage{
+    padding: 30px;
+    color: white;
+    gap: 20px;
+}
+
+.home-page .home-firstpage h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.home-page .home-firstpage h5{
     font-size: 20px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-  }
-  
+}
+
+.home-page .home-firstpage p{
+    font-size: 15px;
+    padding: 10px 0px;
+}
+
+.home-page .home-firstpage button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f248b4;
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
+    gap: 10px;
+}
+
+.home-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-arrow{
+    fill: white;
+}
+
+.event-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.event-page button{
+    padding: 10px;
+    margin-top: 70px;
+    background-color: #5033ff;
+    color: white;
+    border-radius: 15px;
+}
+    
+.event-page h1{
+    text-align: center;
+}
+
+@keyframes menuani {
+    0%{
+        opacity: 0;
+        top: 0;
+    }
+
+    50%{
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity: 1;
+        top: 90px;
+    }
+}
